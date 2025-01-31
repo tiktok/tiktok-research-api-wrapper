@@ -10,7 +10,7 @@ class QueryUserInfoRequest:
     def __init__(self, username, fields=None):
         self.username = username
         self.fields = (
-            "display_name,bio_description,avatar_url,is_verified,follower_count,following_count,likes_count,video_count"
+            "display_name,bio_description,avatar_url,is_verified,follower_count,following_count,likes_count,video_count,bio_url"
             if not fields
             else fields
         )
